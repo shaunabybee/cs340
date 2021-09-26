@@ -23,7 +23,7 @@ def root():
     cur.execute(query)
     results = cur.fetchall()
 
-    return results[0]
+    return "<h1>MySQL Results:</h1>" + results[0]
 
 
 if __name__ == "__main__":
